@@ -1,13 +1,13 @@
-import { useContext } from "react";
+import { useDispatch } from "react-redux";
 import {
   decrementCounter,
   incrementCounter,
   resetCounter
 } from "../redux/action";
-import { AppContext } from "../redux/AppContextProvider";
+// import { dispatch } from "react-redux";
 
 const Counter = () => {
-  const { dispatch } = useContext(AppContext)[1];
+  const dispatch = useDispatch();
   const handleIncrement = () => {
     const action = incrementCounter(1);
     dispatch(action);
