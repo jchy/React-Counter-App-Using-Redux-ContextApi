@@ -1,2 +1,2 @@
-# React-Counter-App-Using-Redux-ContextApi
+# counter-app-using-react-redux
 Created with CodeSandbox
